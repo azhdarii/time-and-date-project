@@ -1,0 +1,8 @@
+{
+  "name": "Firefox with Xpra",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [14500],
+  "postCreateCommand": "bash /usr/local/bin/start-xpra.sh"
+}
